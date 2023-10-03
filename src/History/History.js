@@ -9,8 +9,8 @@ export default function History() {
         <div className="history">
             <h1>Searched History</h1>
             <ul>
-                {history.map((item, index) => (
-                    <li key={index}>
+                {history.map((item, index, arr) => (
+                    <li key={arr.length + 1}>
                         {item.word}
                     </li>
                 ))}

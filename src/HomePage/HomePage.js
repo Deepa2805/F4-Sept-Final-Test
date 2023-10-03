@@ -57,10 +57,10 @@ export default function HomePage() {
 
 
                             {defination && defination.meanings.map((meaning) => {
-                                return (<>
+                                return (<div key={meaning.definitions[0].definition}>
                                     <h2>{meaning.partOfSpeech}</h2>
                                     <p>{meaning.definitions[0].definition}</p>
-                                </>)
+                                </div>)
                             })}
 
                         </div>
